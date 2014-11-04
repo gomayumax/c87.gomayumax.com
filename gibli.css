@@ -4,46 +4,53 @@
  list-style-type: none;
 }
 
-#header{
-  background-color: #F3E2A9;
-  width: 100%;
-  height: 82px;
-  display: block;
-}
-
-#back{
+body {
   background-image: url("img/wall.png");
 }
 
-#inner{
-  margin: auto;
-  width:80%;
+#header{
+  background-color: #F3E2A9;
+  width: 100%;
+  height: 130px;
+  display: block;
+  position: absolute;
+}
+
+#top-header {
+  width: 80%;
+  height: 108px;
+  position: relative;
+  margin: 0 auto;
 }
 
 #logo {
-  margin-top: 12px;
-  float: left;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 54px;
+  width: 138px;
 }
 
 #navbar {
-  padding-top: 10px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 8px;
   height: 54px;
-width: 57%;
-display: block;
-float: left;
-padding-left: 240px;
+  width: 100%;
+  display: block;
 }
 
 #navbar ul li{
   list-style: none;
 }
 #navbar ul {
-  text-align: right;
-  padding-top: 10px;
-  padding-right: 0;
+  width: 640px;
+  height: 54px;
+  margin: 0 auto;
+  display: block;
 }
 #navbar > ul > li{
-  padding-right:10px;
+  padding-right:5px;
   display: inline-block;
   float: left;
 }
@@ -53,45 +60,36 @@ a#about-img{
   width: 150px;
   height: 54px;
   padding-right: 5px;
-   background-image: url("img/about.png"); /* 画像ファイル名 */
+  background-image: url("img/about.png"); /* 画像ファイル名 */
 }
 a#photo-img{
   display: block;
   width: 270px;
   height: 54px;
-   background-image: url("img/photo.png"); /* 画像ファイル名 */
+  background-image: url("img/photo.png"); /* 画像ファイル名 */
 }
 a#yoyaku-img{
   display: block;
   width: 200px;
   height: 54px;
   padding-right: 0px;
-   background-image: url("img/yoyaku.png"); /* 画像ファイル名 */
+  background-image: url("img/yoyaku.png"); /* 画像ファイル名 */
 }
-
-#tw {
-  display: block;
-  width: 82px;
-  height: 82px;
-  float: right;
-}
-
-
-#tw > a{
-  display: block;
-  width: 82px;
-  height: 82px;
-   background-image: url("img/twitter.png"); /* 画像ファイル名 */
-}
-
-#tw > a:hover{
-  background-position: 0 -82px; /* 画像ファイル名 */
-}
-
 
 #navbar > ul > li > a:hover{
   background-position: 0 -54px; /* 画像ファイル名 */
+  border-bottom: dashed 1px #ecb68a;
 }
+
+#content{
+  position: relative;
+  top:130px;
+  width: 80%;
+  height: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+
 #top{
   margin: 10px auto;
   width: 1100px;
@@ -108,11 +106,16 @@ a#yoyaku-img{
 }
 
 .box{
-    margin:40px;
-    height:400px;
-    position: relative;
-    background:#ffffff;
-    padding:40px;
+  margin: 40px;
+  height:400px;
+  position: relative;
+  background:#ffffff;
+  padding:40px;
+}
+
+#about{
+  height: 320px;
+  margin-top: 90px;
 }
 
 #yoyaku{
@@ -120,38 +123,59 @@ a#yoyaku-img{
 }
 
 .box:before{
-    content: '';
-    z-index: 1;
-    position: absolute;
-    border: 1px dashed #904444;
-    top: 7px;
-    bottom: 7px;
-    left: 7px;
-    right: 7px;
-    -moz-box-shadow: 0 0 0 1px #eee;
-    -webkit-box-shadow: 0 0 0 1px #eee;
-    box-shadow: 0 0 0 1px #eee;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  border: 1px dashed #904444;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  right: 7px;
+  -moz-box-shadow: 0 0 0 1px #eee;
+  -webkit-box-shadow: 0 0 0 1px #eee;
+  box-shadow: 0 0 0 1px #eee;
 }
 
 #about > h2 {
-    display: block;
+  display: block;
   width: 150px;
   height: 54px;
-   background-image: url("img/about.png");
+  background-image: url("img/about.png");
 }
 
 #photo > h2 {
-    display: block;
+  display: block;
   width: 270px;
   height: 54px;
-   background-image: url("img/photo.png");
+  background-image: url("img/photo.png");
 }
 
 #yoyaku > h2 {
-    display: block;
+  display: block;
   width: 200px;
   height: 54px;
-   background-image: url("img/yoyaku.png");
+  background-image: url("img/yoyaku.png");
+}
+
+#tw {
+  display: block;
+  width: 205px;
+  height: 82px;
+  margin-top: 10px;
+margin-right: 40px;
+float: right;
+  bottom:0;
+}
+
+a#tw{
+  display: block;
+  width: 205px;
+  height: 82px;
+  background-image: url("img/twitter.png"); /* 画像ファイル名 */
+}
+
+a#tw:hover{
+  background-position: 0 -82px; /* 画像ファイル名 */
 }
 
 h3 {
@@ -187,10 +211,183 @@ p.caution{
   float: right;
   text-align: left;
 }
-#form-box {
-  margin: 20px auto;
+a#form {
   display: block;
-  height: 600px;
-  width: 760px;
+  height: 70px;
+  width: 200px;
+  background-image: url("img/bottom.png");
 }
 
+a#form:hover {
+background-position: 0 -70px;
+}
+
+.slides {
+  padding-top: 10px;
+  height:567px;
+  margin:0px auto;
+  overflow:hidden;
+  position:relative;
+  width:800px;
+}
+.slides ul {
+  list-style:none;
+  position:relative;
+}
+
+/* keyframes #anim_slides */
+@-webkit-keyframes anim_slides {
+  0% {
+    opacity:0;
+  }
+  6% {
+    opacity:1;
+  }
+  24% {
+    opacity:1;
+  }
+  30% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+@-moz-keyframes anim_slides {
+  0% {
+    opacity:0;
+  }
+  6% {
+    opacity:1;
+  }
+  24% {
+    opacity:1;
+  }
+  30% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.slides ul li {
+  opacity:0;
+  position:absolute;
+  top:0;
+
+  /* css3 animation */
+  -webkit-animation-name: anim_slides;
+  -webkit-animation-duration: 24.0s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: anim_slides;
+  -moz-animation-duration: 24.0s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+}
+
+/* css3 delays */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+  -webkit-animation-delay: 6.0s;
+  -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+  -webkit-animation-delay: 12.0s;
+  -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+  -webkit-animation-delay: 18.0s;
+  -moz-animation-delay: 18.0s;
+}
+.slides ul li img {
+  display:block;
+}
+
+/* keyframes #anim_titles */
+@-webkit-keyframes anim_titles {
+  0% {
+    left:100%;
+    opacity:0;
+  }
+  5% {
+    left:10%;
+    opacity:1;
+  }
+  20% {
+    left:10%;
+    opacity:1;
+  }
+  25% {
+    left:100%;
+    opacity:0;
+  }
+  100% {
+    left:100%;
+    opacity:0;
+  }
+}
+@-moz-keyframes anim_titles {
+  0% {
+    left:100%;
+    opacity:0;
+  }
+  5% {
+    left:10%;
+    opacity:1;
+  }
+  20% {
+    left:10%;
+    opacity:1;
+  }
+  25% {
+    left:100%;
+    opacity:0;
+  }
+  100% {
+    left:100%;
+    opacity:0;
+  }
+}
+
+.slides ul li div {
+  background-color:#000000;
+  border-radius:10px 10px 10px 10px;
+  box-shadow:0 0 5px #FFFFFF inset;
+  color:#FFFFFF;
+  font-size:26px;
+  left:10%;
+  margin:0 auto;
+  padding:20px;
+  position:absolute;
+  top:50%;
+  width:200px;
+
+  /* css3 animation */
+  -webkit-animation-name: anim_titles;
+  -webkit-animation-duration: 24.0s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-delay: 0;
+  -webkit-animation-play-state: running;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-name: anim_titles;
+  -moz-animation-duration: 24.0s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -moz-animation-delay: 0;
+  -moz-animation-play-state: running;
+  -moz-animation-fill-mode: forwards;
+}
