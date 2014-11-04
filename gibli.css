@@ -11,6 +11,10 @@
   display: block;
 }
 
+#back{
+  background-image: url("img/wall.png");
+}
+
 #inner{
   margin: auto;
   width:80%;
@@ -22,10 +26,12 @@
 }
 
 #navbar {
-  margin-top: 15px;
+  padding-top: 10px;
   height: 54px;
-  display: block;
-  float: right;
+width: 57%;
+display: block;
+float: left;
+padding-left: 240px;
 }
 
 #navbar ul li{
@@ -37,15 +43,16 @@
   padding-right: 0;
 }
 #navbar > ul > li{
-  padding: 0 10px;
+  padding-right:10px;
   display: inline-block;
   float: left;
 }
 
 a#about-img{
   display: block;
-  width: 200px;
+  width: 150px;
   height: 54px;
+  padding-right: 5px;
    background-image: url("img/about.png"); /* 画像ファイル名 */
 }
 a#photo-img{
@@ -58,7 +65,27 @@ a#yoyaku-img{
   display: block;
   width: 200px;
   height: 54px;
+  padding-right: 0px;
    background-image: url("img/yoyaku.png"); /* 画像ファイル名 */
+}
+
+#tw {
+  display: block;
+  width: 82px;
+  height: 82px;
+  float: right;
+}
+
+
+#tw > a{
+  display: block;
+  width: 82px;
+  height: 82px;
+   background-image: url("img/twitter.png"); /* 画像ファイル名 */
+}
+
+#tw > a:hover{
+  background-position: 0 -82px; /* 画像ファイル名 */
 }
 
 
@@ -70,10 +97,10 @@ a#yoyaku-img{
   width: 1100px;
   height: 567px;
   display: block;
-  background: #E0EEDC;
 }
 
 #top-img{
+  padding-top: 7px;
   margin: 10px auto;
   width: 850px;
   height: 560px;
@@ -84,7 +111,7 @@ a#yoyaku-img{
     margin:40px;
     height:400px;
     position: relative;
-    background:#E0EEDC;
+    background:#ffffff;
     padding:40px;
 }
 
@@ -106,25 +133,40 @@ a#yoyaku-img{
     box-shadow: 0 0 0 1px #eee;
 }
 
-#about > p {
+#about > h2 {
     display: block;
-  width: 200px;
+  width: 150px;
   height: 54px;
    background-image: url("img/about.png");
 }
 
-#photo > p {
+#photo > h2 {
     display: block;
   width: 270px;
   height: 54px;
    background-image: url("img/photo.png");
 }
 
-#yoyaku > p {
+#yoyaku > h2 {
     display: block;
   width: 200px;
   height: 54px;
    background-image: url("img/yoyaku.png");
+}
+
+h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+p.caution{
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #sub-contener{
@@ -138,12 +180,17 @@ a#yoyaku-img{
   display: block;
   margin: auto;
 }
-#sub-container{
+#main-contener{
   height: 200px;
   width: 70%;
   display: block;
   float: right;
-  text-align: right;
+  text-align: left;
 }
-
+#form-box {
+  margin: 20px auto;
+  display: block;
+  height: 600px;
+  width: 760px;
+}
 
