@@ -1,0 +1,48 @@
+* {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+
+
+.box{
+  margin: 40px;
+  height:400px;
+  position: relative;
+  background:#f5f5f5;
+  padding:40px;
+  	box-shadow: 1px 1px 0 rgba(0,0,0,0,5);
+	outline: 1px dashed #fff;
+	outline-offset: -5px;/*-5pxで内側に*/
+}
+
+.inner-box{
+	margin: 20px;
+}
+
+#about > h2 {
+  display: block;
+  width: 150px;
+  height: 54px;
+  background-image: url("img/about.png");
+}
+
+#sub-contener{
+  height: 200px;
+  width: 30%;
+  display: block;
+  float: left;
+}
+
+
+#sub-contener > img{
+  display: block;
+  margin: auto;
+}
+#main-contener{
+  height: 200px;
+  width: 70%;
+  display: block;
+  float: right;
+  text-align: left;
+}

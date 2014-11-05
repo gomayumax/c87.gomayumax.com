@@ -11,7 +11,7 @@ body {
 #header{
   background-color: #F3E2A9;
   width: 100%;
-  height: 470px;
+  height: 385px;
   display: block;
   position: absolute;
 }
@@ -27,14 +27,13 @@ body {
   position: relative;
   margin: 0 auto;
   margin-top: 10px;
-  height: 300px;
-  width: 600px;
+  height: 240x;
+  width: 480px;
 }
 
 #navbar {
   position: relative;
   margin: 0 auto;
-  margin-top: 30px;
   height: 54px;
   width: 100%;
   display: block;
@@ -128,13 +127,15 @@ a#yoyaku-img{
   height: 560px;
   display: block;
 }
-
 .box{
   margin: 40px;
   height:400px;
   position: relative;
   background:#ffffff;
   padding:40px;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0,5);
+  outline: 1px dashed #904444;
+  outline-offset: -5px;/*-5pxで内側に*/
 }
 
 #about{
@@ -148,22 +149,9 @@ a#yoyaku-img{
 }
 
 #yoyaku{
-  height: 300px;
+  height: 1000px;
 }
 
-.box:before{
-  content: '';
-  z-index: 1;
-  position: absolute;
-  border: 1px dashed #904444;
-  top: 7px;
-  bottom: 7px;
-  left: 7px;
-  right: 7px;
-  -moz-box-shadow: 0 0 0 1px #eee;
-  -webkit-box-shadow: 0 0 0 1px #eee;
-  box-shadow: 0 0 0 1px #eee;
-}
 
 #about > h2 {
   display: block;
@@ -263,8 +251,6 @@ p.caution{
   height: 600px;
   width: 760px;
 }
-
-
 
 .slides {
   padding-top: 10px;
