@@ -139,7 +139,7 @@ a#yoyaku-img{
 }
 
 #about{
-  height: 320px;
+  height: 420px;
   margin-top: 90px;
   margin-bottom: 0px;
 }
@@ -251,13 +251,13 @@ p.caution{
 #member{
   margin-left: 30px;
   display: block;
-  height: 270px;
+  height: 365px;
   width: 100%;
   margin-top: 10px;
 }
 
 #half{
-  height: 150px;
+  height: 190px;
   display: block;
   float: left;
   text-align: left;
@@ -296,12 +296,11 @@ p.caution{
   display: block;
 }
 
-.prof > .prof-text > .name > p{
+.prof > .prof-text > .name > p {
 display: inline;
 font-weight:bold;
 font-size: 16px;
   padding: 0px;
-
 }
 
 .prof > .prof-text > .name > ul{
@@ -345,6 +344,36 @@ h3#t_member{
   padding-left: 0;
   padding-top: 0;
 }
+
+
+#thanks > p {
+display: inline;
+font-weight:bold;
+font-size: 16px;
+  padding: 0px;
+}
+
+#thanks > ul{
+  width: 240px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+}
+
+#thanks >  ul > li{
+  float: left;
+    display: inline-block;
+    padding-left: 10px;
+    font-weight:bold;
+}
+
+li#thanks-name{
+  width: 70px;
+  height: 20px;
+  display: block;
+}
+
 
 #form-box {
   margin: 40px auto;
