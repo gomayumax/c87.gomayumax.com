@@ -81,7 +81,7 @@ a#yoyaku-img{
 }
 
 #dr{
-    width: 86px;
+  width: 86px;
   height: 100px;
   display: block;
   padding-right: 10px;
@@ -90,7 +90,7 @@ a#yoyaku-img{
 }
 
 #dl{
-    width: 87px;
+  width: 87px;
   height: 100px;
   display: block;
   padding-right: 10px;
@@ -133,7 +133,7 @@ a#yoyaku-img{
   position: relative;
   background:#ffffff;
   padding:40px;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0,5);
+  box-shadow: 1px 1px 0 rgba(0,0,0,0,5);
   outline: 1px dashed #904444;
   outline-offset: -5px;/*-5pxで内側に*/
 }
@@ -149,6 +149,7 @@ a#yoyaku-img{
 }
 
 #yoyaku{
+  margin-top: 100px;
   height: 1000px;
 }
 
@@ -179,8 +180,8 @@ a#yoyaku-img{
   width: 205px;
   height: 82px;
   margin-top: 10px;
-margin-right: 40px;
-float: right;
+  margin-right: 40px;
+  float: right;
   bottom:0;
 }
 
@@ -196,21 +197,21 @@ a#tw:hover{
 }
 
 a#chu{
-margin-top: 23px;
-float: left;
-margin-left: 40px;
-bottom: 0;
-display: block;
-width: 104px;
-height: 80px;
-background-image: url("img/chu.png");
+  margin-top: 23px;
+  float: left;
+  margin-left: 40px;
+  bottom: 0;
+  display: block;
+  width: 104px;
+  height: 80px;
+  background-image: url("img/chu.png");
 }
 
 a#chu:hover{
-  background-position: 0 -80px;
+  background-position: 0 -81px;
 }
 
-h3 {
+h3#t_yoyaku{
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -238,6 +239,7 @@ p.caution{
   display: block;
   margin: auto;
 }
+
 #main-contener{
   height: 200px;
   width: 70%;
@@ -245,6 +247,54 @@ p.caution{
   float: right;
   text-align: left;
 }
+
+#member{
+  margin-left: 30px;
+  display: block;
+  height: 270px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#half{
+  height: 150px;
+  display: block;
+  float: left;
+  text-align: left;
+  width: 48%;
+  margin-left: 10px;
+}
+
+.prof{
+  width: 100%;
+  height: 100px;
+  display: block;
+  float: left;
+}
+
+.prof > .prof-img{
+  height: 80px;
+  width: 25%;
+  display: block;
+  float: left;
+}
+
+.prof > .prof-text{
+  height: 100px;
+  width: 75%;
+  display: block;
+  float: left;
+}
+.prof > .prof-text > p{
+  padding-left: 9px;
+  font-size: 13px;
+}
+
+h3#t_member{
+  padding-left: 0;
+  padding-top: 0;
+}
+
 #form-box {
   margin: 40px auto;
   display: block;
