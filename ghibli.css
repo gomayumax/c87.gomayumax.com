@@ -286,9 +286,60 @@ p.caution{
   float: left;
 }
 .prof > .prof-text > p{
-  padding-left: 9px;
+  padding-left: 5px;
   font-size: 13px;
 }
+
+.prof > .prof-text > .name {
+  width: 100%;
+  height: 25px;
+  display: block;
+}
+
+.prof > .prof-text > .name > p{
+display: inline;
+font-weight:bold;
+font-size: 16px;
+  padding: 0px;
+
+}
+
+.prof > .prof-text > .name > ul{
+  width: 236px;
+  height: 20px;
+  display: block;
+  margin-top: -20px;
+margin-left: 80px;
+}
+
+.prof > .prof-text >.name >  ul > li{
+  float: left;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+a#tw-bottom{
+    display: block;
+width: 56px;
+height: 16px;
+  background-image: url("img/tw-bottom.png"); /* 画像ファイル名 */
+}
+
+a#tw-bottom:hover{
+  background-position: 0 -16px;
+}
+
+a#ach-bottom{
+    display: block;
+  width: 55px;
+  height: 16px;
+  background-image: url("img/ach-bottom.png"); /* 画像ファイル名 */
+}
+
+a#ach-bottom:hover{
+  background-position: 0 -16px;
+}
+
 
 h3#t_member{
   padding-left: 0;
