@@ -6,6 +6,7 @@
 
 body {
   background-image: url("img/wall.png");
+  min-width: 1367px;
 }
 
 #header{
@@ -504,4 +505,15 @@ li#thanks-name{
   -moz-animation-delay: 0;
   -moz-animation-play-state: running;
   -moz-animation-fill-mode: forwards;
+}
+
+.snsb {
+  list-style-type: none;
+  padding-left: 0;
+}
+.snsb li {
+  margin-bottom: 4px;
+}
+.snsb iframe {
+  margin: 0 !important;
 }
