@@ -1,3 +1,8 @@
+@font-face{
+ font-family: 'kodomo';
+ src: url('font.woff');
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -6,14 +11,16 @@
 
 body {
   background-image: url("img/wall.png");
+  min-width: 1400px;
+  margin: 0;
 }
 
 #header{
+  padding-top: 1px;
   background-color: #F3E2A9;
-  width: 100%;
   height: 385px;
   display: block;
-  position: absolute;
+  position: relative;
 }
 
 #top-header {
@@ -37,6 +44,7 @@ body {
   height: 54px;
   width: 100%;
   display: block;
+  font-family: 'kodomo';
 }
 
 #navbar ul li{
@@ -106,7 +114,6 @@ a#yoyaku-img{
 
 #content{
   position: relative;
-  top:470px;
   width: 80%;
   height: 1300px;
   display: block;
@@ -138,6 +145,11 @@ a#yoyaku-img{
   outline-offset: -5px;/*-5pxで内側に*/
 }
 
+.box h2 {
+  font-family: 'kodomo';
+  font-size: 3em;
+}
+
 #about{
   height: 420px;
   margin-top: 90px;
@@ -153,27 +165,6 @@ a#yoyaku-img{
   height: 1000px;
 }
 
-
-#about > h2 {
-  display: block;
-  width: 150px;
-  height: 54px;
-  background-image: url("img/about.png");
-}
-
-#photo > h2 {
-  display: block;
-  width: 270px;
-  height: 54px;
-  background-image: url("img/photo.png");
-}
-
-#yoyaku > h2 {
-  display: block;
-  width: 200px;
-  height: 54px;
-  background-image: url("img/yoyaku.png");
-}
 
 #tw {
   display: block;
@@ -340,61 +331,6 @@ a#ach-bottom:hover{
 }
 
 
-ul#main_member{
-  height: 190px;
-  width: 96%;
-  display: block;
-  float: left;
-  text-align: left;
-  margin-left: 10px;
-}
-
-ul#main_member > li {
-  display: inline;
-  float: left;
-}
-
-ul#main_member > li > .prof_img{
-height: 80px;
-width: 80px;
-display: block;
-float: left;
-}
-
-.prof_text{
-height: 80px;
-width: 75%;
-display: block;
-float: left;
-}
-
-.prof_text > h4{
-display: inline;
-font-weight: bold;
-font-size: 16px;
-padding: 0px;
-}
-
-.prof_text > p{
-  padding-left: 5px;
-font-size: 13px;
-}
-
-ul.social{
-  width: 70%;
-height: 20px;
-display: block;
-float: right;
-}
-
-ul.social > li{
-float: left;
-display: inline-block;
-padding-left: 10px;
-font-weight: bold;
-}
-
-
 h3#t_member{
   padding-left: 0;
   padding-top: 0;
@@ -406,6 +342,21 @@ display: inline;
 font-weight:bold;
 font-size: 16px;
   padding: 0px;
+}
+
+#thanks > ul{
+  width: 240px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-top: 5px;
+}
+
+#thanks >  ul > li{
+  float: left;
+    display: inline-block;
+    padding-left: 10px;
+    font-weight:bold;
 }
 
 li#thanks-name{
